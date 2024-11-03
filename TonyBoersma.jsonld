@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "TonyBoersma"
+    },
+    "motivations": {
+      "@value": "My motivation to become a DRep stems from a deep belief in the potential of blockchain technology to create a more inclusive and equitable financial system. Cardano, with its focus on peer-reviewed research and a rigorous development process, represents the future of decentralized governance. Being a DRep will allow me to contribute to shaping policies and protocols that have a meaningful impact on the network and its users."
+    },
+    "objectives": {
+      "@value": "I aim to ensure that the voices of the community are accurately represented and that decisions made align with the long-term vision of Cardano. I plan to engage in transparent, thoughtful, and informed decision-making processes, while fostering community trust and participation. My goal is to help drive initiatives that advance Cardano’s mission of decentralization, scalability, and interoperability."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9a25c0hdv2ayud5qlcu5vnwxnggxd4mf4ku0t3sea882f53rzraaguvd6q4l59quc4uhwayk36vgflj2htzwltfqgns2yty0d"
+    },
+    "qualifications": {
+      "@value": "My experience in Product Management and Business Analysis has equipped me with the skills to analyze proposals critically, understand the needs of the community, and make informed decisions. I am also actively engaged in the Cardano community, staying updated on the latest developments. My ability to balance technical understanding with a community-focused approach makes me well-qualified to serve as a DRep."
+    },
+    "references": []
+  }
+}
